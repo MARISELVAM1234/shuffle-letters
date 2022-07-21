@@ -1,0 +1,85 @@
+.circle-section {
+    border: 2px;
+    height: 400px;
+    width: 400px;
+    border-radius: 1100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(red, yellow, green);
+    position: relative;
+}
+
+.circle-section button i {
+
+    font-size: 50px;
+}
+
+button {
+    align-self: center;
+    height: 50px;
+    width: 80px;
+    border: none;
+    background-color: #F7E323;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+.first-header {
+    position: absolute;
+    top: -4px;
+    font-size: 50px;
+}
+
+.sec-header {
+    position: absolute;
+    left: 80px;
+    bottom: 40px;
+    font-size: 50px;
+}
+
+.third-header {
+    position: absolute;
+    right: 70px;
+    bottom: 40px;
+    font-size: 50px;
+}
+
+.fourth-header {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    font-size: 50px;
+}
+
+.fifth-header {
+    position: absolute;
+    right: 20px;
+    top: 130px;
+    font-size: 50px;
+}
+
+
+
+/* // create icon variable
+var icon = document.getElementById('shuffle-icon');
+console.log(icon);
+icon.addEventListener('click', function () {
+    var empty = [];
+    var changePosition = document.querySelectorAll('#same');
+    var array = ['J', 'V', 'A', 'L', 'S'];
+
+    for (let index = 0; index < array.length; index++) {
+        while (empty.length <= array.length) {
+            var randomNumber = Math.floor(Math.random() * array.length);
+            if (!(empty.includes(array[randomNumber]))) {
+                empty[index] = array[randomNumber];
+                break;
+            }
+        }
+        changePosition[index].innerHTML = empty[index];
+    }
+}); */
