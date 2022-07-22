@@ -34,19 +34,20 @@ divElement.append(para1, para2, para3, para4, para5);
 
 // var arrayElement = [para1.value , para2 , para3, para4, para5];
 
-btnElement.addEventListener("click", shuffleFunc);
-var getElement = document.querySelectorAll(".header")
-var arr = [];
-console.log(getElement);
-function shuffleFunc() {
+
+btnElement.addEventListener('click', shuffleFunc)
+    function shuffleFunc() {
+    var arr = [];
+    var getElement = document.querySelectorAll('.header');
     var arrayElement = ["A", "B", "C", "D", "E"];
-
-    for (i = 0; i < arrayElement.length; i++) {
-        var element = Math.floor(Math.random() * arrayElement.length);
-        console.log(element);
-       console.log( arr[i] = arrayElement[element]);
-        console.log(getElement[i].innerHTML = arr[i]);
-
+    for (let i = 0; i < arrayElement.length; i++) {
+        while (arr.length <= arrayElement.length) {
+            var number = Math.floor(Math.random() * arrayElement.length);
+            if (!(arr.includes(arrayElement[number]))) {
+                arr[i] = arrayElement[number];
+                break;
+            }
+        }
+        getElement[i].innerHTML = arr[i];
     }
-    console.log(arr);
 }
