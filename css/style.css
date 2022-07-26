@@ -3,7 +3,7 @@
     height: 400px;
     width: 400px;
     border-radius: 1100px;
-    margin: 50px auto;
+    margin: 5px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
     font-size: 50px;
 }
 
-button {
+.circle-section button {
     align-self: center;
     height: 50px;
     width: 80px;
@@ -24,7 +24,7 @@ button {
     background-color: #F7E323;
 }
 
-button:hover {
+.circle-section button:hover {
     background-color: yellow;
 }
 
@@ -61,25 +61,36 @@ button:hover {
     top: 130px;
     font-size: 50px;
 }
+.display{
+    text-align: center;
+    margin: 30px auto;
+    
+}
+.display input {
+    height: 30px;
+    width:140px; 
+}
+ #btn2{
+    height: 35px;
+    width:40px;
+    margin-left:15px;
+}
+#btn3 {
+    height: 35px;
+    width:100px ;
+    margin-left:15px;
+}
 
-
-
-/* // create icon variable
-var icon = document.getElementById('shuffle-icon');
-console.log(icon);
-icon.addEventListener('click', function () {
-    var empty = [];
-    var changePosition = document.querySelectorAll('#same');
-    var array = ['J', 'V', 'A', 'L', 'S'];
-
-    for (let index = 0; index < array.length; index++) {
-        while (empty.length <= array.length) {
-            var randomNumber = Math.floor(Math.random() * array.length);
-            if (!(empty.includes(array[randomNumber]))) {
-                empty[index] = array[randomNumber];
-                break;
-            }
-        }
-        changePosition[index].innerHTML = empty[index];
-    }
-}); */
+.display div {
+    padding: 10px;
+    margin: 20px auto;
+    height: auto;
+    width: 200px;
+    outline: 3px solid black;
+}
+.display p {
+    margin-top: 5px;
+    font-weight: 600;
+    color: green;
+    font-size: 20px;
+}
